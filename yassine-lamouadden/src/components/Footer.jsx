@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
 
 const Footer = () => {
-  return (
-    <footer className="text-5xl">Tous droits réservés - Lamouadden Yassine</footer>
-  )
-}
+  const year = new Date().getFullYear(); 
 
-export default Footer
+  return (
+    <footer className="text-5xl text-center mt-4">
+      © {year} - Yassine Lamouadden, Tous droits réservés.
+    </footer>
+  );
+};
+
+export default Footer;
