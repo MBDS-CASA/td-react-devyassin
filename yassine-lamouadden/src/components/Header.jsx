@@ -5,7 +5,7 @@ const Header = () => {
     <header>
       <div>
         <img
-          src="../assets/logo.jpg"
+          src="logo.jpg"
           alt="Logo de votre formation"
           style={{ width: "50px", height: "50px" }}
         />
