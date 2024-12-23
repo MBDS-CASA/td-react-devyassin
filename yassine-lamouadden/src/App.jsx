@@ -7,6 +7,7 @@ import MainContent from "./components/MainContent";
 import Footer from "./components/Footer";
 import { getRandomItem as getRandomItemFromUtils } from "./utils/trie_data";
 import ItemDisplay from "./components/ItemDisplay";
+import Nav from "./components/Nav";
 
 function App() {
   const [data, setData] = useState([]);
@@ -28,10 +29,9 @@ function App() {
     }
   };
 
-  console.log("Fetched data:", data);
-
   return (
     <>
+      <Nav />
       <Header />
       <MainContent />
       <button onClick={handleGetRandomItem}>Get Random Item</button>
