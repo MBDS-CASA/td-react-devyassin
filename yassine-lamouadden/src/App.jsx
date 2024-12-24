@@ -69,9 +69,9 @@ function App() {
                 />
               }
             />
-            <Route path="/notes" element={<Notes />} />
-            <Route path="/etudiants" element={<Etudiants />} />
-            <Route path="/matieres" element={<Matieres />} />
+            <Route path="/notes" element={<Notes data={data} />} />
+            <Route path="/etudiants" element={<Etudiants data={data} />} />
+            <Route path="/matieres" element={<Matieres data={data} />} />
             <Route path="/apropos" element={<Apropos />} />
             {/* Redirect any unknown routes to home */}
             <Route path="*" element={<Navigate to="/" replace />} />
